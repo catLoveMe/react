@@ -19,13 +19,15 @@ class UseRefs extends Component{
     render(){
         return(
             <div>
+                <input type='password' autoComplete="on"/>
                 <input type="text"
                        ref={(input) => { this.textInput = input; }}
                 />
                 <input
                     type="button"
                     value="Focus the text input"
-                    onClick={this.focus.bind(this)}
+                    autoComplete="on"
+                    
                 />
                 <div>
                     <form onSubmit={this.submit.bind(this)}>
